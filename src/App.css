@@ -1,0 +1,13 @@
+.body {
+  height: 1180px;
+  background-image: url(./assets/BJJ+Gi.jpg);
+}
+
+.body .container {
+  height: max-content;
+}
+
+.contador {
+  color: white;
+  margin-left: 5px;
+}
