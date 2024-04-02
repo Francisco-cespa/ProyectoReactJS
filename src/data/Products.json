@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "category": "Rashguards",
+    "title": "Chaddie",
+    "pictureUrl": "https://http2.mlstatic.com/D_NQ_NP_888730-MLA40846602975_022020-O.webp",
+    "price": "16.800 $",
+    "description": "Rashguard de compresión de manga larga con paneles reforzados en áreas de alto impacto, perfecto para artes marciales mixtas (MMA) y entrenamiento de grappling."
+  },
+  {
+    "id": 2,
+    "category": "Rashguards",
+    "title": "Ruttger",
+    "pictureUrl": "https://mmaespartano.com/wp-content/uploads/Rashguard-ML-Venum-Grizzli-NegroBlanco-001.jpg",
+    "price": "15.400 $",
+    "description": "Rashguard sin mangas con diseño ajustado y costuras reforzadas para mayor durabilidad durante combates de lucha libre."
+  },
+  {
+    "id": 3,
+    "category": "Rashguards",
+    "title": "Vail",
+    "pictureUrl": "https://acdn.mitiendanube.com/stores/002/054/621/products/rushguard-skull-rojo-frente1-d78a9c4fed651fd2e016735342663176-480-0.png",
+    "price": "14.000 $",
+    "description": "Rashguard de cuello alto con protección UV y tejido resistente al desgarro, ideal para entrenamientos de jiu-jitsu brasileño (BJJ) y judo."
+  },
+  {
+    "id": 4,
+    "category": "Rashguards",
+    "title": "Ester",
+    "pictureUrl": "https://affordablerashguards.com/cdn/shop/products/dogfight-short-sleeve-rashguard-389975.jpg?v=1655926000",
+    "price": "639",
+    "description": "Rashguard de compresión con paneles de malla estratégicamente ubicados para una ventilación óptima durante combates de boxeo y muay thai."
+  },
+  {
+    "id": 5,
+    "category": "Kimonos",
+    "title": "Leisha",
+    "pictureUrl": "https://tiendabushido.cl/wp-content/uploads/2021/03/clasic-black.jpg",
+    "price": "180.000 $",
+    "description": "Kimono de jiu-jitsu brasileño (BJJ) con gi ligero de tela preencogida y pantalones reforzados para una mayor durabilidad."
+  },
+  {
+    "id": 6,
+    "category": "Kimonos",
+    "title": "Melinde",
+    "pictureUrl": "https://es.venum.com/cdn/shop/products/0_252F4_252F0_252F1_252F0401631e58e97408dd268c3ce3461d177cc08ebc_BJJ_GI_CLASSIC2.0_WHITE_1500_02.jpg?v=1689479717",
+    "price": "210.000 $",
+    "description": "Kimono de sambo con tejido resistente y diseño de una sola pieza para resistir agarres y lanzamientos en entrenamientos y competiciones."
+  },
+  {
+    "id": 7,
+    "category": "Kimonos",
+    "title": "Malorie",
+    "pictureUrl": "https://www.worldcombat.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/k/i/kimono-world-combat-ghost-army-verde-preto-.jpg",
+    "price": "170.000 $",
+    "description": "Kimono tradicional de una sola capa con tela resistente y refuerzos en áreas de alta tensión para entrenamientos intensivos"
+  },
+  {
+    "id": 8,
+    "category": "Kimonos",
+    "title": "Devinne",
+    "pictureUrl": "https://tiendabushido.cl/wp-content/uploads/2021/03/cbc4e026c47869cc3dd6faa82dd2ade3d6be1d7f_BJJ_GI_POWER2.0_BLACK_1500_02.jpg",
+    "price": "230.000 $",
+    "description": "Kimono y pantalones anchos para facilitar movimientos fluidos y técnicas de lanzamiento."
+  },
+  {
+    "id": 9,
+    "category": "Bermudas",
+    "title": "Micah",
+    "pictureUrl": "https://http2.mlstatic.com/D_NQ_NP_935345-MLA69652219230_052023-O.webp",
+    "price": "33.000 $",
+    "description": "Bermuda de MMA con tejido resistente y aberturas laterales para movimientos ágiles y flexibles durante combates y entrenamientos intensos."
+  },
+  {
+    "id": 10,
+    "category": "Bermudas",
+    "title": "Querida",
+    "pictureUrl": "https://http2.mlstatic.com/D_NQ_NP_702015-MLA71219938356_082023-O.webp",
+    "price": "30.000 $",
+    "description": "Bermuda de muay thai con diseño de cintura elástica y aberturas amplias para patadas altas y una óptima movilidad en el ring."
+  },
+  {
+    "id": 11,
+    "category": "Bermudas",
+    "title": "Gorden",
+    "pictureUrl": "https://http2.mlstatic.com/D_NQ_NP_899616-MLB53490434599_012023-O.webp",
+    "price": "28.000 $",
+    "description": "Bermuda de jiu-jitsu brasileño (BJJ) con tejido resistente a la tracción y refuerzos en las áreas clave para una mayor durabilidad y rendimiento en la estera."
+  },
+  {
+    "id": 12,
+    "category": "Bermudas",
+    "title": "Kati",
+    "pictureUrl": "https://www.clubedalutashop.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/b/j/bjj_jiu_jitsu_vertica_dark3.jpg",
+    "price": "25.000 $",
+    "description": "Bermuda de MMA con costuras reforzadas y diseño de pierna ajustado para evitar enganches durante combates en el tatami."
+  }
+]
