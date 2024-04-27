@@ -1,20 +1,17 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import cart from "../assets/carrito-de-compras.png";
-
-export const numero = () => {
-  const [numero, setNumero] = useState(0);
-  return (
-    <button onClick={() => setNumero(numero + 1)}> {numero} numero</button>
-  );
-};
-
-// ejemplo de button
+import { Link } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
 
 export const CartWidget = () => {
+  const { cantidadEnCarrito } = useContext(CartContext);
+
   return (
     <>
-      <img src={cart} alt="carrito" height="50px" width="50px" />
-      <span className="contador">{numero()}</span>
+      <Link className="menu-link" to="/carrito">
+        <img src={cart} alt="carrito" height="50px" width="50px" />
+      </Link>
+      <span className="numerito">{cantidadEnCarrito()}</span>
     </>
   );
 };

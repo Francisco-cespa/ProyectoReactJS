@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import { CartWidget } from "./CartWidget";
+import Carrito from "./Carrito";
 
 export const NavBar = () => {
   return (
@@ -21,7 +22,6 @@ export const NavBar = () => {
               Bermudas
             </Nav.Link>
           </Nav>
-          <CartWidget />
         </Container>
       </Navbar>
     </>

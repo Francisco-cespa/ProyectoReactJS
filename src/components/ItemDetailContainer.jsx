@@ -1,24 +1,24 @@
-import { useEffect, useState } from "react";
-
+import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
-
 import Container from "react-bootstrap/Container";
-
-import data from "../data/Products.json";
+import { getFirestore, getDoc, doc } from "firebase/firestore";
+import { CartContext } from "../context/CartContext";
+import { ItemCount } from "./ItemCount";
 
 export const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
 
+  const { items } = useContext(CartContext);
+
   const { id } = useParams();
 
   useEffect(() => {
-    const get = new Promise((resolve, reject) => {
-      setTimeout(() => resolve(data), 2000);
-    });
+    const db = getFirestore();
 
-    get.then((data) => {
-      const filteredData = data.find((d) => d.id === Number(id));
-      setItem(filteredData);
+    const refDoc = doc(db, "items", id);
+
+    getDoc(refDoc).then((snapshot) => {
+      setItem({ id: snapshot.id, ...snapshot.data() });
     });
   }, [id]);
 
@@ -27,10 +27,13 @@ export const ItemDetailContainer = () => {
   return (
     <Container className="mt-4 detailContainer">
       <div>{item.title}</div>
-      <div>{item.category}</div>
+      <div>{item.categoryid}</div>
       <div>{item.description}</div>
       <div>{item.price}</div>
-      <img src={item.pictureUrl} alt={item.title} />
+      <div>Stock actual: {item.stock} unidades.</div>
+      <img src={item.imageURL} alt={item.title} />
+
+      <ItemCount item={item} />
     </Container>
   );
 };
