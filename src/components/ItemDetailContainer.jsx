@@ -8,8 +8,6 @@ import { ItemCount } from "./ItemCount";
 export const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
 
-  const { items } = useContext(CartContext);
-
   const { id } = useParams();
 
   useEffect(() => {

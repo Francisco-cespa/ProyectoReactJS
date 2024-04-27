@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import cart from "../assets/carrito-de-compras.png";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
