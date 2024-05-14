@@ -7,7 +7,7 @@ export const ItemCount = ({ item }) => {
   const [cantidad, setCantidad] = useState(1);
 
   const handleDecrease = () => {
-    if (cantidad > 0) {
+    if (cantidad > 1) {
       setCantidad(cantidad - 1);
     }
   };
@@ -20,7 +20,7 @@ export const ItemCount = ({ item }) => {
 
   const handleAdd = () => {
     const itemAgregado = { ...item, cantidad };
-
+    setCantidad(1);
     const nuevoCarrito = [...carrito];
     const estaEnElCarrito = nuevoCarrito.find(
       (producto) => producto.id === itemAgregado.id
@@ -33,7 +33,6 @@ export const ItemCount = ({ item }) => {
     }
     setCarrito(nuevoCarrito);
   };
-  console.log(carrito);
 
   return (
     <div>

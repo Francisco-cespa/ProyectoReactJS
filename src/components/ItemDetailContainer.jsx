@@ -1,8 +1,7 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import { getFirestore, getDoc, doc } from "firebase/firestore";
-import { CartContext } from "../context/CartContext";
 import { ItemCount } from "./ItemCount";
 
 export const ItemDetailContainer = () => {

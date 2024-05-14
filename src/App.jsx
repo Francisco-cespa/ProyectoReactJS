@@ -5,8 +5,6 @@ import { ItemListContainer } from "./components/ItemListContainer";
 import { ItemDetailContainer } from "./components/ItemDetailContainer";
 import { NavBar } from "./components/Navbar";
 import { Container } from "react-bootstrap";
-
-import { useEffect } from "react";
 import { CartProvider } from "./context/CartContext";
 import Carrito from "./components/Carrito";
 
