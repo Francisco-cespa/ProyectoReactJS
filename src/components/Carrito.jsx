@@ -34,12 +34,20 @@ export const Carrito = () => {
     const db = getFirestore();
     const orderCollection = collection(db, "orders");
 
-    addDoc(orderCollection, order).then(({ id }) => {
-      if (id) {
-        alert("Su orden: " + id + " ha sido completada!");
-        handleVaciar();
-      }
-    });
+    if (
+      order.items.length > 0 &&
+      order.buyer.name != "" &&
+      order.buyer.email != ""
+    ) {
+      addDoc(orderCollection, order).then(({ id }) => {
+        if (id) {
+          alert("Su orden: " + id + " ha sido completada!");
+          handleVaciar();
+        }
+      });
+    } else {
+      alert("Por favor asegurese de completar los campos obligatorios!");
+    }
   };
 
   const handleVaciar = () => {
@@ -60,7 +68,6 @@ export const Carrito = () => {
       ))}
       <h2>Precio total: ${precioTotal()} </h2>
       <button onClick={handleVaciar}> Vaciar Carrito.</button>
-
       <h2>Datos personales.</h2>
       <form>
         <div className="mt-2">
@@ -94,7 +101,6 @@ export const Carrito = () => {
           />
         </div>
       </form>
-
       <button onClick={handleOrder}>comprar</button>
     </div>
   );
